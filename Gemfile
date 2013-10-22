@@ -17,3 +17,5 @@ end
 
 gem "middleman-gh-pages"
 gem "rake"
+gem "therubyracer"
+gem "oj"

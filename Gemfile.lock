@@ -27,6 +27,7 @@ GEM
     http_parser.rb (0.5.3)
     i18n (0.6.5)
     kramdown (1.2.0)
+    libv8 (3.16.14.3)
     listen (1.3.1)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -66,6 +67,7 @@ GEM
       sprockets-helpers (~> 1.0.0)
       sprockets-sass (~> 1.0.0)
     multi_json (1.8.2)
+    oj (2.1.7)
     rack (1.5.2)
     rack-livereload (0.3.15)
       rack
@@ -77,6 +79,7 @@ GEM
       ffi (>= 0.5.0)
     rb-kqueue (0.2.0)
       ffi (>= 0.5.0)
+    ref (1.0.5)
     ruby18_source_location (0.2)
     sass (3.2.12)
     sprockets (2.10.0)
@@ -89,6 +92,9 @@ GEM
     sprockets-sass (1.0.2)
       sprockets (~> 2.0)
       tilt (~> 1.1)
+    therubyracer (0.12.0)
+      libv8 (~> 3.16.14.0)
+      ref
     thor (0.18.1)
     tilt (1.3.7)
     uglifier (2.1.2)
@@ -102,6 +108,8 @@ DEPENDENCIES
   middleman (~> 3.1.6)
   middleman-gh-pages
   middleman-livereload (~> 3.1.0)
+  oj
   rake
   ruby18_source_location
+  therubyracer
   wdm (~> 0.1.0)
