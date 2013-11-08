@@ -38,10 +38,20 @@
 # Reload the browser automatically whenever files change
 # activate :livereload
 
+load File.expand_path('../schedule.rb', __FILE__)
+
 # Methods defined in the helpers block are available in templates
 helpers do
   def xing_event_url
     "https://www.xing.com/events/xing-api-event-sessions-the-preface-1317028"
+  end
+
+  def schedule
+    Schedule.all
+  end
+
+  def just_the_time_of(time)
+    time.strftime('%H:%M')
   end
 end
 

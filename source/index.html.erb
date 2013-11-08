@@ -16,6 +16,50 @@
 
       <hr/>
 
+      <h4 id="schedule">Schedule</h4>
+
+      <p>
+        <strong>All talks are in German</strong> / Slides will be in English.
+      </p>
+
+      <p>
+        Due to it's intimate size <i>The Preface</i> will be a single-track event. Besides lots of insights on the XING platform and reports from our partners there will be plenty of time to talk shop, brain storm and get to know each other.
+      </p>
+
+      <p>
+        Great catering, drinks and of course good coffee will guide you through the day.
+      </p>
+
+      <p>
+        After lunch we are welcoming you in our <i>Clinic</i>. A place to meet 1:1 with the XING experts. Time to ask your questions, give feedback or tell us about your problems. We will come equipped with laptops, notepads to help you out and listen. And it is not just about technical questions. Our growth hacking experts are happy to give you some hands on advice on how to grow your app or website and gain more customers, too.
+      </p>
+
+      <p>
+        Please bare with us in case of last minute schedule changes.
+      </p>
+
+      <table class="schedule">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Session</th>
+            <th>Speaker</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% schedule.each do |session| %>
+          <tr>
+            <td><%= just_the_time_of(session['time']) %></td>
+            <td><%= session['info'] %></td>
+            <td><%= session['speaker'] %></td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+
+
+      <hr/>
+
       <h4 id="hotels">Hotels</h4>
       <p>
         For all of you who need a place to sleep in Hamburg during <i>The&nbsp;Preface</i> here are some easy options all in walking distance to the betahaus.
