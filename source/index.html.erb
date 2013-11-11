@@ -51,7 +51,16 @@
           <tr>
             <td><%= just_the_time_of(session['time']) %></td>
             <td><%= session['info'] %></td>
-            <td><%= session['speaker'] %></td>
+            <td>
+              <% session['speakers'].each_with_index do |speaker, i| %>
+                <% if session['links'][i] && !session['links'][i].empty? %>
+                  <a href="<%= session['links'][i] %>" target="_blank"><%= speaker %></a>
+                <% else %>
+                  <%= speaker %>
+                <% end %>
+                <% if i < session['speakers'].length - 1 %> / <% end %>
+              <% end %>
+            </td>
           </tr>
           <% end %>
         </tbody>

@@ -10,5 +10,9 @@ table.schedule {
   tbody > tr:nth-child(odd) > td {
     background: #CFDC00;
     color: #000;
+
+    a {
+      color: #000;
+    }
   }
 }
